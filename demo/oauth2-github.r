@@ -2,14 +2,14 @@ library(httr)
 
 # 1. Find OAuth settings for github:
 #    http://developer.github.com/v3/oauth/
-oauth_endpoints("github")
+oauth_endpoints("OAuth Test app")
 
 # 2. To make your own application, register at 
 #    https://github.com/settings/developers. Use any URL for the homepage URL
 #    (http://github.com is fine) and  http://localhost:1410 as the callback url
 #
 #    Replace your key and secret below.
-myapp <- oauth_app("github",
+myapp <- oauth_app("OAuth Test app",
   key = "7f38e172a54ca83faf15",
   secret = "1b326c8da53fcab42e499b14889970882cfd4258")
 
